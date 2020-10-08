@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <script src="tre-i-rad.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tre-i-rad.css">
     <title>Tre i rad!</title>
@@ -25,18 +26,7 @@
         <div id="9" class="square" onClick="markSquare(this.id)"></div>
     </center>
 
-    <script>
-        var marker = "X";
 
-        function markSquare(id) {
-            var elem = document.getElementById(id);
-            if (elem.innerHTML != "") return;
-            elem.innerHTML = marker;
-            if (marker == "X") marker = "O";
-            else marker = "X";
-        }
-
-    </script>
 </body>
 
 </html>
