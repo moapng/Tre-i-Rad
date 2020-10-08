@@ -14,3 +14,12 @@ function resetGame() {
         element.innerHTML = "";
     }
 }
+
+function gameOver() {
+    var elem = document.getElementsByClassName("square");
+    for (let element of elem) {
+        if (elem.innerHTML != "") {
+            document.getElementById("game-over").innerHTML = "GAME OVER";
+        }
+    }
+}
