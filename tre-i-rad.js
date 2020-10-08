@@ -7,3 +7,10 @@ function markSquare(id) {
     if (marker == "X") marker = "O";
     else marker = "X";
 }
+
+function resetGame() {
+    var elem = document.getElementsByClassName("square");
+    for (let element of elem) {
+        element.innerHTML = "";
+    }
+}
